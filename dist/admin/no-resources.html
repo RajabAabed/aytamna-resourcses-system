@@ -242,7 +242,7 @@
               <ul class="flex flex-col space-y-2">
                 <li>
                   <a
-                    class="asideItem activeAsideItem"
+                    class="asideItem"
                     href="index.html"
                   >
                     <img
@@ -255,7 +255,7 @@
                 </li>
                 <li>
                   <a
-                    class="asideItem"
+                    class="asideItem activeAsideItem"
                     href="resources.html"
                   >
                     <img
@@ -325,137 +325,58 @@
                     >
                   </div>
                 </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="resources.html"
+                      class="breadcrumbLink"
+                      aria-current="page"
+                    >
+                      إدارة الموارد التعليمية
+                    </a>
+                  </div>
+                </li>
               </ol>
+              <div
+                class="flex flex-row gap-3 items-center flex-auto justify-end"
+              ></div>
+              <div class="advance-search w-full"></div>
             </nav>
             <!-- End Breadcrumb -->
-            <div class="mt-5">
+            <div class="w-full h-full flex justify-center items-center mt-20">
               <div
-                class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12"
+                class="shadow-dasboardItem shadow-[#C2C2C2] rounded-lg p-8 sm:w-full sm:max-w-xl text-center"
               >
-                <!-- Card -->
-                <div
-                  class="flex flex-col bg-white shadow-dasboardItem shadow-[#85b56b] rounded-xl"
+                <img
+                  src="../assets/images/no-resources.svg"
+                  alt="No News"
+                  class="mx-auto w-48"
+                />
+                <h3
+                  class="text-primary-600 text-title font-IBM font-medium my-5"
                 >
-                  <div class="p-6 md:p-8 flex justify-start gap-x-6">
-                    <div class="">
-                      <img
-                        src="../assets/icons/tick-circle-g.svg"
-                        alt="2 user"
-                        class="sm:w-16 w-14"
-                      />
-                    </div>
-                    <div>
-                      <p
-                        class="text-title uppercase tracking-wide font-normal text-black font-IBM"
-                      >
-                        عدد الموارد التعليمية
-                      </p>
-                      <div class="mt-1 flex items-center gap-x-2">
-                        <h3
-                          class="text-h4 font-bold sm:text-h2 text-black font-IBM"
-                        >
-                          350
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div
-                  class="flex flex-col bg-white shadow-dasboardItem shadow-[#85b56b] rounded-xl"
-                >
-                  <div class="p-6 md:p-8 flex justify-start gap-x-6">
-                    <div class="">
-                      <img
-                        src="../assets/icons/2 user.svg"
-                        alt="2 user"
-                        class="sm:w-16 w-14"
-                      />
-                    </div>
-                    <div>
-                      <p
-                        class="text-title uppercase tracking-wide font-normal text-black font-IBM"
-                      >
-                        عدد المستخدمين
-                      </p>
-                      <div class="mt-1 flex items-center gap-x-2">
-                        <h3
-                          class="text-h4 font-bold sm:text-h2 text-black font-IBM"
-                        >
-                          350
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div
-                  class="flex flex-col bg-white shadow-dasboardItem shadow-[#85b56b] rounded-xl"
-                >
-                  <div class="p-6 md:p-8 flex justify-start gap-x-6">
-                    <div class="">
-                      <img
-                        src="../assets/icons/shield.svg"
-                        alt="2 user"
-                        class="sm:w-16 w-14"
-                      />
-                    </div>
-                    <div>
-                      <p
-                        class="text-title uppercase tracking-wide font-normal text-black font-IBM"
-                      >
-                        عدد المشاركات
-                      </p>
-                      <div class="mt-1 flex items-center gap-x-2">
-                        <h3
-                          class="text-h4 font-bold sm:text-h2 text-black font-IBM"
-                        >
-                          350
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div
-                  class="flex flex-col bg-white shadow-dasboardItem shadow-[#85B56B] rounded-xl"
-                >
-                  <div class="p-6 md:p-8 flex justify-start gap-x-6">
-                    <div class="">
-                      <img
-                        src="../assets/icons/envlop.svg"
-                        alt="2 user"
-                        class="sm:w-16 w-14"
-                      />
-                    </div>
-                    <div>
-                      <p
-                        class="text-title uppercase tracking-wide font-normal text-black font-IBM"
-                      >
-                        عدد التنزيلات
-                      </p>
-                      <div class="mt-1 flex items-center gap-x-2">
-                        <h3
-                          class="text-h4 font-bold sm:text-h2 text-black font-IBM"
-                        >
-                          350
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Grid -->
-              <div>
-                <h3 class="text-primary-500 font-IBM text-title font-bold mb-3">
-                  توزيع الموارد التعليمة حسب الفئة
+                  لا يوجد حالياً أي مصدر تعليمي للاطلاع
                 </h3>
+                <a
+                  href="add-resources.html"
+                  class="btn-primary"
+                >
+                  <img
+                    src="../assets/icons/add-circle.svg"
+                    alt="add-circle"
+                    class="w-5"
+                  />
+                  <span>إضافة مورد جديد</span></a
+                >
               </div>
-              <div id="chart"></div>
             </div>
           </div>
         </div>
@@ -549,66 +470,5 @@
     <script src="../assets/js/preline.min.js"></script>
     <!-- Custom JS -->
     <script src="../assets/js/script.js"></script>
-
-    <script>
-      var options = {
-        series: [
-          {
-            name: "Resources",
-            data: [
-              {
-                x: "الرياضة",
-                y: 400,
-                fillColor: "#223B58",
-              },
-              {
-                x: "الاقتصاد",
-                y: 430,
-                fillColor: "#87C752",
-              },
-              {
-                x: "السياسة",
-                y: 448,
-                fillColor: "#75C4EF",
-              },
-
-              {
-                x: "الرياضة",
-                y: 540,
-                fillColor: "#2778AF",
-              },
-              {
-                x: "التكنولوجيا",
-                y: 580,
-                fillColor: "#B5D49D",
-              },
-            ],
-          },
-        ],
-        chart: {
-          type: "bar",
-          height: 380,
-        },
-        xaxis: {
-          type: "category",
-          labels: {
-            formatter: function (val) {
-              return val;
-            },
-          },
-        },
-
-        tooltip: {
-          x: {
-            formatter: function (val) {
-              return val;
-            },
-          },
-        },
-      };
-
-      var chart = new ApexCharts(document.querySelector("#chart"), options);
-      chart.render();
-    </script>
   </body>
 </html>

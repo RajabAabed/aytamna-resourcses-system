@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   sliderOption();
   resetPasswordInput();
-  addfiles();
+  addfiles("add-images", ".image-info-container");
+  addfiles("add-files", ".file-info-container");
   discountCard();
 });
 
@@ -83,11 +84,11 @@ function closePopup(modalId) {
   }
 }
 
-function addfiles() {
+function addfiles(fInput, fContainer) {
   let fileList = []; // All images here
 
-  const fileInput = document.getElementById("add-files");
-  const fileInfoContainer = document.querySelector(".file-info-container");
+  const fileInput = document.getElementById(fInput);
+  const fileInfoContainer = document.querySelector(fContainer);
 
   if (!fileInput) {
     return;
@@ -110,8 +111,14 @@ function addfiles() {
       );
 
       const fileThumbnail = document.createElement("img");
-      fileThumbnail.src =
-        "https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg";
+      // const asset_ur = document.getElementById("asset_ur").value;
+
+      if (fInput == "add-images") {
+        fileThumbnail.src = "../assets/icons/gallery.svg";
+      } else {
+        fileThumbnail.src = "../assets/icons/document-text.svg";
+      }
+
       fileThumbnail.classList.add("w-10", "h-10", "rounded-md");
 
       const fileNameContainer = document.createElement("div");
@@ -145,7 +152,7 @@ function addfiles() {
       deleteButtonContainer.appendChild(deleteButton);
 
       const deleteButtonImage = document.createElement("img");
-      deleteButtonImage.src = "../../assets/icons/trash.svg";
+      deleteButtonImage.src = "../assets/icons/trash.svg";
       deleteButton.appendChild(deleteButtonImage);
 
       deleteButton.addEventListener("click", () => {

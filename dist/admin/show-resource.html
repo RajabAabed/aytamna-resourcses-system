@@ -242,7 +242,7 @@
               <ul class="flex flex-col space-y-2">
                 <li>
                   <a
-                    class="asideItem activeAsideItem"
+                    class="asideItem"
                     href="index.html"
                   >
                     <img
@@ -255,7 +255,7 @@
                 </li>
                 <li>
                   <a
-                    class="asideItem"
+                    class="asideItem activeAsideItem"
                     href="resources.html"
                   >
                     <img
@@ -325,137 +325,230 @@
                     >
                   </div>
                 </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="resources.html"
+                      class="breadcrumbLink"
+                      aria-current="page"
+                    >
+                      إدارة الموارد التعليمية
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="show-resource.html"
+                      class="breadcrumbLink"
+                      aria-current="page"
+                    >
+                      عرض مورد 123
+                    </a>
+                  </div>
+                </li>
               </ol>
+              <div
+                class="flex flex-row gap-3 items-center flex-auto justify-end"
+              ></div>
+              <div class="advance-search w-full"></div>
             </nav>
             <!-- End Breadcrumb -->
             <div class="mt-5">
-              <div
-                class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12"
+              <form
+                action=""
+                method="get"
               >
-                <!-- Card -->
                 <div
-                  class="flex flex-col bg-white shadow-dasboardItem shadow-[#85b56b] rounded-xl"
+                  class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
                 >
-                  <div class="p-6 md:p-8 flex justify-start gap-x-6">
-                    <div class="">
-                      <img
-                        src="../assets/icons/tick-circle-g.svg"
-                        alt="2 user"
-                        class="sm:w-16 w-14"
+                  <div class="sm:col-span-3">
+                    <label
+                      for="supplier-name"
+                      class="label"
+                      >اسم المورد</label
+                    >
+                    <div class="mt-2">
+                      <input
+                        type="text"
+                        name="supplier-name"
+                        id="supplier-name"
+                        class="input"
+                        value="أساسيات تعليم البرمجة "
+                        disabled
                       />
                     </div>
-                    <div>
-                      <p
-                        class="text-title uppercase tracking-wide font-normal text-black font-IBM"
+                  </div>
+                  <div class="sm:col-span-3">
+                    <label
+                      for="resource-type"
+                      class="label"
+                      >نوع المصدر
+                    </label>
+                    <div class="mt-2">
+                      <select
+                        id="resource-type"
+                        data-hs-select='{
+                          "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
+                          "toggleClasses": "select-input",
+                          "dropdownClasses": "select-dropdown",
+                          "optionClasses": "select-option",
+                          "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-3.5 text-blue-600 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>",
+                          "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"shrink-0 size-3.5 text-gray-500 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m7 15 5 5 5-5\"/><path d=\"m7 9 5-5 5 5\"/></svg></div>"
+                        }'
+                        class="hidden"
+                        name="resource-type"
+                        disabled
                       >
-                        عدد الموارد التعليمية
-                      </p>
-                      <div class="mt-1 flex items-center gap-x-2">
-                        <h3
-                          class="text-h4 font-bold sm:text-h2 text-black font-IBM"
+                        <option value="c">مقال</option>
+                        <option
+                          value="n"
+                          selected
                         >
-                          350
-                        </h3>
+                          جريدة
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="sm:col-span-3">
+                    <label
+                      for="category"
+                      class="label"
+                      >الفئة
+                    </label>
+                    <div class="mt-2">
+                      <select
+                        id="category"
+                        data-hs-select='{
+                        
+                        "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
+                        "toggleClasses": "select-input",
+                        "dropdownClasses": "select-dropdown",
+                        "optionClasses": "select-option",
+                        "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"shrink-0 size-3.5 text-blue-600 \" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>",
+                        "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"shrink-0 size-3.5 text-gray-500 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m7 15 5 5 5-5\"/><path d=\"m7 9 5-5 5 5\"/></svg></div>"
+                      }'
+                        class="hidden"
+                        name="category"
+                        disabled
+                      >
+                        <option value="c">التكنولوجيا</option>
+                        <option
+                          value="n"
+                          selected
+                        >
+                          الرياضة
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="sm:col-span-6">
+                    <label
+                      for="details"
+                      class="label"
+                      >الوصف
+                    </label>
+                    <div class="mt-2">
+                      <textarea
+                        id="details"
+                        name="details"
+                        rows="6"
+                        class="input"
+                        disabled
+                      >
+لغة Python تعد واحدة من أشهر لغات البرمجة وأكثرها استخدامًا في العالم اليوم. بدأت في أوائل التسعينيات على يد المطور الهولندي Guido van Rossum، وقد تم تصميمها لتكون لغة سهلة القراءة والتعلم، مما يجعلها مثالية للمبتدئين وللمشاريع الصغيرة والكبيرة على حد سواء.
+                      في هذا المقال، سنتعرف على أساسيات لغة Python وبعض المفاهيم الرئيسية التي يجب أن تتعلمها لتصبح قادرًا على كتابة برامج فعالة باستخدام هذه اللغة.
+                      
+                      لماذا Python؟
+                      تتمتع Python بالعديد من المزايا التي تجعلها الخيار الأمثل للكثير من المبرمجين:
+                      سهلة القراءة والكتابة: تتميز Python ببساطة في بناء الجمل، حيث أن الكود المكتوب بها يشبه اللغة الإنجليزية.
+                      متعددة الاستخدامات: يمكنك استخدام Python في تطوير الويب، تحليل البيانات، الذكاء الاصطناعي، الأتمتة، الألعاب، وغيرها من المجالات.
+                      مجتمع دعم ضخم: هناك مجتمع كبير من المطورين حول العالم الذين يستخدمون Python، مما يعني وجود العديد من الموارد والدروس المتاحة.
+                      الأساسيات في Python
+                      1. المتغيرات (Variables)
+                      
+                      في المثال أعلاه:
+                      name هو متغير من نوع string.
+                      age هو متغير من نوع integer.
+                      height هو متغير من نوع float.
+                      
+                      </textarea>
+                    </div>
+                  </div>
+                  <div class="sm:col-span-6">
+                    <div
+                      class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-3"
+                    >
+                      <div class="overflow-hidden rounded-lg">
+                        <img
+                          src="../assets/images/sign.jpg"
+                          alt=""
+                          class="w-full hover:scale-125 transition-all ease-in-out delay-200 duration-500"
+                        />
+                      </div>
+
+                      <div class="overflow-hidden rounded-lg">
+                        <img
+                          src="../assets/images/sign.jpg"
+                          alt=""
+                          class="w-full hover:scale-125 transition-all ease-in-out delay-200 duration-500"
+                        />
+                      </div>
+                      <div class="overflow-hidden rounded-lg">
+                        <img
+                          src="../assets/images/sign.jpg"
+                          alt=""
+                          class="w-full hover:scale-125 transition-all ease-in-out delay-200 duration-500"
+                        />
+                      </div>
+                      <div class="overflow-hidden rounded-lg">
+                        <img
+                          src="../assets/images/sign.jpg"
+                          alt=""
+                          class="w-full hover:scale-125 transition-all ease-in-out delay-200 duration-500"
+                        />
+                      </div>
+                      <div class="overflow-hidden rounded-lg">
+                        <img
+                          src="../assets/images/sign.jpg"
+                          alt=""
+                          class="w-full hover:scale-125 transition-all ease-in-out delay-200 duration-500"
+                        />
+                      </div>
+                      <div class="overflow-hidden rounded-lg">
+                        <img
+                          src="../assets/images/sign.jpg"
+                          alt=""
+                          class="w-full hover:scale-125 transition-all ease-in-out delay-200 duration-500"
+                        />
+                      </div>
+                      <div class="overflow-hidden rounded-lg">
+                        <img
+                          src="../assets/images/sign.jpg"
+                          alt=""
+                          class="w-full hover:scale-125 transition-all ease-in-out delay-200 duration-500"
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div
-                  class="flex flex-col bg-white shadow-dasboardItem shadow-[#85b56b] rounded-xl"
-                >
-                  <div class="p-6 md:p-8 flex justify-start gap-x-6">
-                    <div class="">
-                      <img
-                        src="../assets/icons/2 user.svg"
-                        alt="2 user"
-                        class="sm:w-16 w-14"
-                      />
-                    </div>
-                    <div>
-                      <p
-                        class="text-title uppercase tracking-wide font-normal text-black font-IBM"
-                      >
-                        عدد المستخدمين
-                      </p>
-                      <div class="mt-1 flex items-center gap-x-2">
-                        <h3
-                          class="text-h4 font-bold sm:text-h2 text-black font-IBM"
-                        >
-                          350
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div
-                  class="flex flex-col bg-white shadow-dasboardItem shadow-[#85b56b] rounded-xl"
-                >
-                  <div class="p-6 md:p-8 flex justify-start gap-x-6">
-                    <div class="">
-                      <img
-                        src="../assets/icons/shield.svg"
-                        alt="2 user"
-                        class="sm:w-16 w-14"
-                      />
-                    </div>
-                    <div>
-                      <p
-                        class="text-title uppercase tracking-wide font-normal text-black font-IBM"
-                      >
-                        عدد المشاركات
-                      </p>
-                      <div class="mt-1 flex items-center gap-x-2">
-                        <h3
-                          class="text-h4 font-bold sm:text-h2 text-black font-IBM"
-                        >
-                          350
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card -->
-                <!-- Card -->
-                <div
-                  class="flex flex-col bg-white shadow-dasboardItem shadow-[#85B56B] rounded-xl"
-                >
-                  <div class="p-6 md:p-8 flex justify-start gap-x-6">
-                    <div class="">
-                      <img
-                        src="../assets/icons/envlop.svg"
-                        alt="2 user"
-                        class="sm:w-16 w-14"
-                      />
-                    </div>
-                    <div>
-                      <p
-                        class="text-title uppercase tracking-wide font-normal text-black font-IBM"
-                      >
-                        عدد التنزيلات
-                      </p>
-                      <div class="mt-1 flex items-center gap-x-2">
-                        <h3
-                          class="text-h4 font-bold sm:text-h2 text-black font-IBM"
-                        >
-                          350
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Grid -->
-              <div>
-                <h3 class="text-primary-500 font-IBM text-title font-bold mb-3">
-                  توزيع الموارد التعليمة حسب الفئة
-                </h3>
-              </div>
-              <div id="chart"></div>
+              </form>
             </div>
           </div>
         </div>
@@ -477,6 +570,55 @@
         </div>
       </div>
     </footer>
+
+    <!-- Confirm popup -->
+    <div
+      class="relative z-10 popup hidden"
+      id="confirm-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg shadow-modal bg-white px-4 pb-4 pt-5 transition-all sm:my-8 sm:w-full sm:max-w-xl sm:p-6"
+          >
+            <div>
+              <img
+                src="../assets/icons/wallet-add-color.svg"
+                alt="check"
+                class="mx-auto w-10"
+              />
+            </div>
+            <div class="mt-5 sm:mt-6">
+              <h6
+                class="font-IBM font-bold text-[#87C756] text-title text-center"
+              >
+                تم إضافة المورد التعليمي بنجاح!
+              </h6>
+              <p
+                class="font-IBM font-normal text-body text-center text-primary-600 mt-3"
+              >
+                لقد تم إضافة المورد التعليمي على النظام بنجاح
+              </p>
+              <a
+                class="btn-primary w-full mt-5"
+                href="resources.html"
+              >
+                عودة إلى الرئيسية
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Logout popup -->
     <div
@@ -549,66 +691,5 @@
     <script src="../assets/js/preline.min.js"></script>
     <!-- Custom JS -->
     <script src="../assets/js/script.js"></script>
-
-    <script>
-      var options = {
-        series: [
-          {
-            name: "Resources",
-            data: [
-              {
-                x: "الرياضة",
-                y: 400,
-                fillColor: "#223B58",
-              },
-              {
-                x: "الاقتصاد",
-                y: 430,
-                fillColor: "#87C752",
-              },
-              {
-                x: "السياسة",
-                y: 448,
-                fillColor: "#75C4EF",
-              },
-
-              {
-                x: "الرياضة",
-                y: 540,
-                fillColor: "#2778AF",
-              },
-              {
-                x: "التكنولوجيا",
-                y: 580,
-                fillColor: "#B5D49D",
-              },
-            ],
-          },
-        ],
-        chart: {
-          type: "bar",
-          height: 380,
-        },
-        xaxis: {
-          type: "category",
-          labels: {
-            formatter: function (val) {
-              return val;
-            },
-          },
-        },
-
-        tooltip: {
-          x: {
-            formatter: function (val) {
-              return val;
-            },
-          },
-        },
-      };
-
-      var chart = new ApexCharts(document.querySelector("#chart"), options);
-      chart.render();
-    </script>
   </body>
 </html>

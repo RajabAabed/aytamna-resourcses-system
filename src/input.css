@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply py-3 px-8  text-center sm:text-body text-description font-IBM rounded-lg transition-all duration-500 ease-in-out delay-150;
+    @apply py-3 px-6 flex justify-center items-center gap-2 text-center sm:text-body text-description font-IBM rounded-lg transition-all duration-500 ease-in-out delay-150;
   }
   .btn-primary {
     @apply btn bg-[#87C756] text-white font-bold   hover:bg-primary-500 active:bg-primary-600  disabled:bg-primary-300;
@@ -30,7 +30,7 @@
   }
 
   .select-input {
-    @apply input hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap  cursor-pointer;
+    @apply input hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-4 ps-4 pe-9 flex gap-x-2 text-nowrap  cursor-pointer;
   }
 
   .select-dropdown {
@@ -45,7 +45,9 @@
   .radioInput {
     @apply h-5 w-5 border bg-primary-100 border-primary-300 text-primary-500 focus:ring-primary-400 hover:border-primary-400;
   }
-
+  .checkBoxInput {
+    @apply h-5 w-5 rounded bg-primary-100 border-primary-300  text-primary-600 focus:ring-primary-600;
+  }
   .asideItem {
     @apply flex items-center gap-x-3.5 py-5 px-3 text-subTitle text-white  rounded-lg hover:bg-primary-500 focus:outline-none focus:bg-primary-500 hover:border-s-[#85B56B] hover:border-s-4 transition-all ease-in-out duration-200 delay-100;
   }
@@ -107,7 +109,7 @@
     @apply bg-primary-500 border-s-[#85B56B] border-s-4;
   }
   .Breadcrumb {
-    @apply flex flex-wrap justify-between items-center bg-grey-300 p-5 rounded-lg gap-y-2;
+    @apply flex flex-wrap justify-between items-center bg-grey-300 py-3 px-5 rounded-lg gap-y-2;
   }
   .Breadcrumb ol li:last-child a {
     @apply font-bold lg:text-title text-body !important;
@@ -124,6 +126,9 @@
   .select-input {
     background-position: left 0.5rem center;
     padding-left: 2.5rem;
+  }
+  .disabled.select-input {
+    opacity: 1 !important;
   }
 }
 @font-face {

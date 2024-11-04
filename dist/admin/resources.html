@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html
+  lang="ar"
+  dir="rtl"
+  class="light"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/images/logo-dark.svg"
+    />
+    <!-- Css Files -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/output.css"
+    />
+    <title>Aytamna RSS</title>
+  </head>
+  <body>
+    <!--  *** HEADER *** -->
+    <header
+      class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-[48] w-full bg-white border-b text-sm py-5 lg:ps-[280px]"
+    >
+      <nav class="px-4 sm:px-6 flex basis-full items-center w-full mx-auto">
+        <div
+          class="me-5 lg:me-0 lg:hidden flex gap-3 justify-start items-center"
+        >
+          <!-- Navigation Toggle -->
+          <button
+            type="button"
+            class="h-10 w-28 flex justify-center items-center gap-x-2 border border-gray-200 rounded-lg focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="hs-application-sidebar"
+            aria-label="Toggle navigation"
+            data-hs-overlay="#hs-application-sidebar"
+          >
+            <span class="sr-only">Toggle Navigation</span>
+            <img
+              src="../assets/icons/menu.svg"
+              alt="menu Icon"
+            />
+          </button>
+          <!-- End Navigation Toggle -->
+          <!-- Logo -->
+          <a
+            class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+            href="index.html"
+            aria-label="aytamna"
+          >
+            <img
+              src="../assets/images/logo-dark.svg"
+              alt=""
+              class="w-28"
+            />
+          </a>
+          <!-- End Logo -->
+        </div>
+
+        <div
+          class="w-full flex items-center justify-end ms-auto md:justify-between gap-x-1 md:gap-x-3"
+        >
+          <div class="hidden md:block">
+            <h4 class="text-h4 text-black font-IBM font-bold">
+              اهلا بعودتك، ملك!
+            </h4>
+            <p class="text-description text-black font-IBM font-normal mt-3">
+              <span class="mx-2">الاربعاء</span>
+              <span class="mx-2">11 سبتمبر 2024</span>
+            </p>
+          </div>
+          <div class="hidden md:block flex-1 mx-10"></div>
+          <div class="flex flex-row items-center justify-end gap-7">
+            <div
+              class="hs-dropdown [--placement:bottom-right] relative inline-flex"
+            >
+              <button
+                id="hs-dropdown-notifications"
+                type="button"
+                class="size-[50px] relative inline-flex justify-center items-center gap-x-5 text-sm font-semibold rounded-full border border-transparent text-primary-400 bg-secondary-100 hover:bg-secondary-200 focus:outline-none focus:bg-secondary-100 disabled:opacity-50 disabled:pointer-events-none"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <img
+                  src="../assets/icons/notification-bing.svg"
+                  alt=""
+                />
+                <span class="sr-only">Notifications</span>
+              </button>
+              <div
+                class="hs-dropdown-menu dropdown-menu duration min-w-96 max-h-96 overflow-auto"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-notifications"
+              >
+                <div class="py-1 space-y-0.5">
+                  <ul>
+                    <li class="hover:bg-secondary-100 p-4 rounded-lg mb-2">
+                      <div class="flex justify-between items-start">
+                        <div class="text-body font-bold font-IBM text-black">
+                          استكمال طلب الشراكة
+                        </div>
+                        <div
+                          class="text-description font-semibold font-IBM text-black"
+                        >
+                          11-09-2024
+                        </div>
+                      </div>
+                      <p
+                        class="text-black text-description font-IBM font-normal mt-2"
+                      >
+                        طلبك في انتظار إرفاق الوثائق.
+                      </p>
+                    </li>
+                    <li class="hover:bg-secondary-100 p-4 rounded-lg mb-2">
+                      <div class="flex justify-between items-start">
+                        <div class="text-body font-bold font-IBM text-black">
+                          استكمال طلب الشراكة
+                        </div>
+                        <div
+                          class="text-description font-semibold font-IBM text-black"
+                        >
+                          11-09-2024
+                        </div>
+                      </div>
+                      <p
+                        class="text-black text-description font-IBM font-normal mt-2"
+                      >
+                        طلبك في انتظار إرفاق الوثائق.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Dropdown -->
+            <div
+              class="hs-dropdown [--placement:bottom-right] relative inline-flex"
+            >
+              <button
+                id="hs-dropdown-account"
+                type="button"
+                class="inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-black focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label="Dropdown"
+              >
+                <div class="text-end hidden lg:block">
+                  <p class="text-description text-black font-IBM font-bold">
+                    ملك حمّاد
+                  </p>
+                  <span
+                    class="text-description text-black font-IBM font-normal mt-2"
+                    >رقم المستفيد #12345678</span
+                  >
+                </div>
+                <img
+                  class="shrink-0 size-[50px] rounded-full"
+                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                  alt="Avatar"
+                />
+              </button>
+              <div
+                class="hs-dropdown-menu dropdown-menu duration min-w-60"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="hs-dropdown-account"
+              >
+                <div class="py-3 px-5 bg-secondary-100 rounded-t-lg">
+                  <p class="text-description text-black font-IBM font-bold">
+                    ملك حمّاد
+                  </p>
+                  <span
+                    class="text-description text-black font-IBM font-normal mt-2"
+                    >رقم المستفيد #12345678</span
+                  >
+                </div>
+                <div class="py-1.5 space-y-0.5">
+                  <button
+                    class="flex w-full items-center gap-x-3.5 py-2 px-3 rounded-lg text-body text-black font-IBM font-bod hover:bg-secondary-100 focus:outline-none focus:bg-secondary-100"
+                    onclick="openPopup('logout-modal')"
+                  >
+                    <img
+                      src="../assets/icons/logout.svg"
+                      alt="logout-icon"
+                    />
+                    تسجيل الخروج
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- End Dropdown -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- *** END HEADER *** -->
+
+    <!-- *** MAIN CONTENT *** -->
+    <main>
+      <!--  Sidebar -->
+      <aside
+        id="hs-application-sidebar"
+        class="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 translate-x-full transition-all duration-300 transform w-[280px] h-full hidden fixed inset-y-0 start-0 z-[60] bg-primary-400 lg:block lg:translate-x-0 lg:end-auto lg:bottom-0"
+        role="dialog"
+        tabindex="-1"
+        aria-label="Sidebar"
+      >
+        <div class="relative flex flex-col h-full max-h-full">
+          <div class="px-6 pt-4">
+            <!-- Logo -->
+            <a
+              class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+              href="index.html"
+              aria-label="aytamna"
+            >
+              <img
+                src="../assets/images/logo.svg"
+                alt=""
+                class="w-28"
+              />
+            </a>
+            <!-- End Logo -->
+          </div>
+
+          <!-- Content -->
+          <div
+            class="h-full flex items-center overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300"
+          >
+            <nav
+              class="hs-accordion-group p-3 w-full flex flex-col flex-wrap"
+              data-hs-accordion-always-open
+            >
+              <ul class="flex flex-col space-y-2">
+                <li>
+                  <a
+                    class="asideItem"
+                    href="index.html"
+                  >
+                    <img
+                      src="../assets/icons/home.svg"
+                      alt="home Icon"
+                      class=""
+                    />
+                    الصفحة الرئيسية
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem activeAsideItem"
+                    href="resources.html"
+                  >
+                    <img
+                      src="../assets/icons/menu-board.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    إدارة الموارد التعليمية
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="asideItem"
+                    href="user.html"
+                  >
+                    <img
+                      src="../assets/icons/Ads-click.svg"
+                      alt="hand Icon"
+                      class=""
+                    />
+                    حساب المستخدم
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- End Content -->
+
+          <div class="p-3 w-full">
+            <button
+              class="flex items-center gap-x-3.5 py-5 px-3 text-subTitle text-primary-300 rounded-lg hover:bg-primary-500 focus:outline-none focus:bg-primary-500 w-full"
+              onclick="openPopup('logout-modal')"
+            >
+              <img
+                src="../assets/icons/logout.svg"
+                alt="logout Icon"
+                class=""
+              />
+              تسجيل الخروج
+            </button>
+          </div>
+        </div>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Content -->
+      <div class="w-full lg:ps-[280px]">
+        <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
+          <div
+            class="p-4 sm:p-6 bg-white rounded-lg shadow-dasboard lg:min-h-[81vh] min-h-[80vh]"
+          >
+            <!-- Breadcrumb -->
+            <nav
+              class="Breadcrumb"
+              aria-label="Breadcrumb"
+            >
+              <ol
+                role="list"
+                class="flex items-center"
+              >
+                <li>
+                  <div class="flex items-center">
+                    <a
+                      href="index.html"
+                      class="breadcrumbLink"
+                      >الرئيسية</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      aria-hidden="true"
+                    >
+                      <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                    </svg>
+                    <a
+                      href="resources.html"
+                      class="breadcrumbLink"
+                      aria-current="page"
+                    >
+                      إدارة الموارد التعليمية
+                    </a>
+                  </div>
+                </li>
+              </ol>
+              <div
+                class="flex flex-row gap-3 items-center flex-auto justify-end"
+              >
+                <a
+                  href="add-resources.html"
+                  class="btn-primary"
+                >
+                  <img
+                    src="../assets/icons/add-circle.svg"
+                    alt="add-circle"
+                    class="w-5"
+                  />
+                  <span>إضافة مورد جديد</span></a
+                >
+              </div>
+              <div class="advance-search w-full"></div>
+            </nav>
+            <!-- End Breadcrumb -->
+            <div class="mt-5">
+              <div class="mt-10 -m-1.5 overflow-x-auto">
+                <div class="p-1.5 min-w-full inline-block align-middle">
+                  <div class="overflow-hidden border rounded-lg">
+                    <table class="min-w-full divide-y divide-[#F5F5F5]">
+                      <thead>
+                        <tr>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            اسم المورد
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            رابط المورد
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            تاريخ النشر
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            نوع المصدر
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            الفئة
+                          </th>
+                          <th
+                            scope="col"
+                            class="tableHeadItem"
+                          >
+                            الإجراءات
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-[#F5F5F5]">
+                        <tr class="odd:bg-grey-300">
+                          <td class="tableBodyItem">
+                            <p>أساسيات برمجة Python</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <a
+                              class="underline"
+                              href="#"
+                              >رابط 1</a
+                            >
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>19/09/2024</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>مقال</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>التكنولوجيا</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <a
+                              href="showPartnerRequest.html"
+                              class="mx-1.5"
+                            >
+                              <img
+                                src="../assets/icons/eye.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              عرض
+                            </a>
+                            <button class="mx-1.5">
+                              <img
+                                src="../assets/icons/edit-2.svg"
+                                alt="edit"
+                                class="inline"
+                              />
+                              تعديل
+                            </button>
+                            <button
+                              class="mx-1.5"
+                              onclick="openPopup('confirm-delete-modal')"
+                            >
+                              <img
+                                src="../assets/icons/trash.svg"
+                                alt="trash"
+                                class="inline"
+                              />
+                              حذف
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="odd:bg-grey-300">
+                          <td class="tableBodyItem">
+                            <p>أساسيات برمجة Python</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <a
+                              class="underline"
+                              href="#"
+                              >رابط 1</a
+                            >
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>19/09/2024</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>مقال</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>التكنولوجيا</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <a
+                              href="showPartnerRequest.html"
+                              class="mx-1.5"
+                            >
+                              <img
+                                src="../assets/icons/eye.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              عرض
+                            </a>
+                            <button class="mx-1.5">
+                              <img
+                                src="../assets/icons/edit-2.svg"
+                                alt="edit"
+                                class="inline"
+                              />
+                              تعديل
+                            </button>
+                            <button
+                              class="mx-1.5"
+                              onclick="openPopup('confirm-delete-modal')"
+                            >
+                              <img
+                                src="../assets/icons/trash.svg"
+                                alt="trash"
+                                class="inline"
+                              />
+                              حذف
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="odd:bg-grey-300">
+                          <td class="tableBodyItem">
+                            <p>أساسيات برمجة Python</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <a
+                              class="underline"
+                              href="#"
+                              >رابط 1</a
+                            >
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>19/09/2024</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>مقال</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <p>التكنولوجيا</p>
+                          </td>
+                          <td class="tableBodyItem">
+                            <a
+                              href="showPartnerRequest.html"
+                              class="mx-1.5"
+                            >
+                              <img
+                                src="../assets/icons/eye.svg"
+                                alt="eye"
+                                class="inline"
+                              />
+                              عرض
+                            </a>
+                            <button class="mx-1.5">
+                              <img
+                                src="../assets/icons/edit-2.svg"
+                                alt="edit"
+                                class="inline"
+                              />
+                              تعديل
+                            </button>
+                            <button
+                              class="mx-1.5"
+                              onclick="openPopup('confirm-delete-modal')"
+                            >
+                              <img
+                                src="../assets/icons/trash.svg"
+                                alt="trash"
+                                class="inline"
+                              />
+                              حذف
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- Pagination -->
+              <div
+                class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6 mt-5"
+              >
+                <div class="flex flex-1 justify-between sm:hidden">
+                  <a
+                    href="#"
+                    class="btn-primary-secondary"
+                    >Previous</a
+                  >
+                  <a
+                    href="#"
+                    class="btn-primary-secondary"
+                    >Next</a
+                  >
+                </div>
+                <div
+                  class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between"
+                >
+                  <div>
+                    <p class="text-description text-black font-IBM">
+                      يظهر
+                      <span class="font-medium">1</span>
+                      الى
+                      <span class="font-medium">12</span>
+                      من
+                      <span class="font-medium">97</span>
+                      نتيجة
+                    </p>
+                  </div>
+                  <div>
+                    <nav
+                      class="isolate inline-flex -space-x-px rounded-md shadow-sm"
+                      aria-label="Pagination"
+                    >
+                      <a
+                        href="#"
+                        class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+                      >
+                        <span class="sr-only">Previous</span>
+                        <svg
+                          class="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="#"
+                        aria-current="page"
+                        class="pagination-item active"
+                        >1</a
+                      >
+                      <a
+                        href="#"
+                        class="pagination-item"
+                        >2</a
+                      >
+                      <a
+                        href="#"
+                        class="pagination-item"
+                        >3</a
+                      >
+                      <span
+                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0"
+                        >...</span
+                      >
+                      <a
+                        href="#"
+                        class="pagination-item"
+                        >8</a
+                      >
+
+                      <a
+                        href="#"
+                        class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+                      >
+                        <span class="sr-only">Next</span>
+                        <svg
+                          class="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Content -->
+      <!-- *** END MAIN CONTENT *** -->
+    </main>
+    <footer>
+      <div class="w-full lg:ps-[280px]">
+        <div class="flex justify-between items-center px-6 pb-6 lg:px-16">
+          <p class="font-IBM text-black text-badges font-normal">
+            جميع الحقوق محفوظة © لمنصة أيتامنا 2024
+          </p>
+          <a
+            href="#"
+            class="font-IBM text-black text-badges font-normal"
+            >ساسية الاستخدام والخصوصية</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Confirm delete popup -->
+    <div
+      class="relative z-10 popup hidden"
+      id="confirm-delete-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg shadow-modal bg-white px-4 pb-4 pt-5 transition-all sm:my-8 sm:w-full sm:max-w-xl sm:p-6"
+          >
+            <div class="mt-5 sm:mt-6">
+              <h6
+                class="font-IBM font-bold text-[#87C756] text-title text-center"
+              >
+                هل تريد بالفعل حذف المورد؟
+              </h6>
+              <p
+                class="font-IBM font-normal text-body text-center text-primary-600 mt-3"
+              >
+                إذا كنت متأكد اضغط على موافق
+              </p>
+              <div class="flex justify-center items-center gap-3">
+                <button class="btn-success mt-5">موافق</button>
+                <button
+                  class="btn-danger mt-5"
+                  onclick="closePopup('confirm-delete-modal')"
+                >
+                  إلغاء
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logout popup -->
+    <div
+      class="relative z-10 hidden"
+      id="logout-modal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="fixed inset-0 bg-gray-200 bg-opacity-75 transition-opacity"
+        aria-hidden="true"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg shadow-modal bg-white px-4 pb-4 pt-5 text-left transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
+          >
+            <div>
+              <div
+                class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-danger-100"
+              >
+                <img
+                  src="../assets/icons/logout-red.svg"
+                  alt="lock"
+                  class=""
+                />
+              </div>
+              <div class="mt-3 text-center sm:mt-5">
+                <h3
+                  class="text-title font-bold text-black font-IBM"
+                  id="modal-title"
+                >
+                  هل انت متاكد من تسجيل الخروج؟
+                </h3>
+              </div>
+            </div>
+            <div class="mt-5 sm:mt-6">
+              <form
+                action="#"
+                method="POST"
+                class="space-y-6"
+              >
+                <button
+                  type="submit"
+                  class="btn-danger w-full"
+                >
+                  نعم، سجل الخروج
+                </button>
+              </form>
+              <div class="mt-3">
+                <button
+                  type="button"
+                  class="btn-danger-secondary w-full"
+                  onclick="closePopup('logout-modal')"
+                >
+                  لا، اريد البقاء
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- apexcharts  -->
+    <script src="../assets/js/apexcharts.js"></script>
+    <!-- preline JS  -->
+    <script src="../assets/js/preline.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
