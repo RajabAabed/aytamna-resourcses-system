@@ -236,7 +236,7 @@ function printCard() {
         <head>
           <link
       rel="stylesheet"
-      href="../../assets/css/output.css"
+      href="../../assets/css/general.min.css"
     />
      <style>
           body {

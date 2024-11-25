@@ -4,7 +4,8 @@
   "main": "/dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "npx tailwindcss -i ./src/input.css -o ./dist/assets/css/output.css --watch"
+    "build-general-css": "npx tailwindcss -i ./src/general.css -o ./dist/assets/css/general.min.css --watch",
+    "build-custom-css": "npx tailwindcss -i ./src/custom.css -o ./dist/assets/css/custom.min.css --watch"
   },
   "keywords": [],
   "author": "",
